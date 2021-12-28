@@ -1,4 +1,9 @@
 html, body {
+  margin: 20px;
+  padding: 6px;
   overflow: hidden;
+  color:  white;
+  font-family: Arial, Helvetica;
+  font-size: 18px;
   background: black;
 }

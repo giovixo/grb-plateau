@@ -1,18 +1,44 @@
 <!DOCTYPE html>
-<html lang="en" >
+
 <head>
-  <meta charset="UTF-8">
-  <title>CodePen - Strange Creature 3: Jeff the Sea Slug</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-<link rel="stylesheet" href="./style.css">
-
+	<title>
+		GRB X and optical plateau
+	</title>
+	<link rel="stylesheet" href="./style.css">
 </head>
-<body>
-<!-- partial:index.partial.html -->
 
-<!-- partial -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js'></script><script  src="./script.js"></script>
+<body>
+	<h1 style="color: green">
+		GRB X and optical light curves
+	</h1>
+	<p><b>
+		Make your choice in two easy steps
+	</b></p>
+	
+	<p> First select one from the given options:
+		<select id="select1" onchange="renderHello()">
+			<option value="cat1.jpeg">GRB 1</option>
+			<option value="cat2.jpeg">GRB 2</option>
+			<option value="cat3.jpeg">GRB 3</option>
+		</select>
+	</p>
+
+	<p>
+		Then plot, by clicking the button below:
+	</p>
+
+
+	<button onclick="renderHello()"> Plot </button>
+
+	<div id="target"></div>
+	<script id="template" type="x-tmpl-mustache">
+      <h2>{{ name }}</h2>
+      <img src="img/{{ name }}" alt="GRB" width="700" height="460">
+    </script>
+	
+	<script src="https://unpkg.com/mustache@latest"></script>
+	<script type="text/javascript" src="js/view_lc.js"></script>
 
 </body>
+
 </html>
