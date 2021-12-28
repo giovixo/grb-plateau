@@ -16,10 +16,10 @@
 	</b></p>
 	
 	<p> First select one from the given options:
-		<select id="select1" onchange="renderHello()">
-			<option value="cat1.jpeg">GRB 1</option>
-			<option value="cat2.jpeg">GRB 2</option>
-			<option value="cat3.jpeg">GRB 3</option>
+		<select id="select1">
+			<option value="050319_opt_X_data_bestfitBPL.png">050319</option>
+			<option value="050416A_opt_X_data_bestfitBPL.png">050416A</option>
+			<option value="050730_opt_X_data_bestfitBPL.png">050730</option>
 		</select>
 	</p>
 
@@ -32,7 +32,7 @@
 
 	<div id="target"></div>
 	<script id="template" type="x-tmpl-mustache">
-      <h2>{{ name }}</h2>
+      <h3>File: {{ name }}</h3>
       <img src="img/{{ name }}" alt="GRB" width="700" height="460">
     </script>
 	
