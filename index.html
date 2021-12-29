@@ -84,11 +84,13 @@
 	<script id="template" type="x-tmpl-mustache">
 	  <br>	
       <p>File: {{ name }}</p>
-      <img src="img/{{ name }}" alt="GRB" width="700" height="460">
-      <br><br>
-      <p style="font-size:16px; font-style: italic;">
-      	Broad-band spectro-temporal analysis. <b>Top panel:</b> blue stars and green dots represent the afterglow X-ray and R-band flux density, respectively. Blue vertical dotted line marks the start of the X-ray plateau. Cyan down and up triangles mark the maximum and minimum flux density values extrapolated from X-rays assuming a simple power law with spectral index &beta;opt,x = &beta;x and &beta;opt,x = &beta;x-0.5, respectively. Magenta points represent the rebinned data where the X-ray spectral index was measured. Black dashed line is the best fit broken power law model. Note that the data used for the fit are only those  encompassed by the black dashed line, i.e. where the plateau and post-plateau phases are dominant. <b>Bottom panel:</b> the X-ray spectral index &beta;x versus time. These indexes have been used to compute the maximum and minimum R-band flux densities (up and down cyan triangles in the top panel) by assuming a simple power law spectrum with index &beta;opt,x = &beta;x and &beta;opt,x = &beta;x-0.5
-      </p>
+      <figure class="figure">
+         <img src="img/{{ name }}" class="figure-img img-fluid rounded" alt="GRB" width="700" height="460">
+         <figcaption class="figure-caption" style="color: white">
+         	Broad-band spectro-temporal analysis. <b>Top panel:</b> blue stars and green dots represent the afterglow X-ray and R-band flux density, respectively. Blue vertical dotted line marks the start of the X-ray plateau. Cyan down and up triangles mark the maximum and minimum flux density values extrapolated from X-rays assuming a simple power law with spectral index &beta;opt,x = &beta;x and &beta;opt,x = &beta;x-0.5, respectively. Magenta points represent the rebinned data where the X-ray spectral index was measured. Black dashed line is the best fit broken power law model. Note that the data used for the fit are only those  encompassed by the black dashed line, i.e. where the plateau and post-plateau phases are dominant. <b>Bottom panel:</b> the X-ray spectral index &beta;x versus time. These indexes have been used to compute the maximum and minimum R-band flux densities (up and down cyan triangles in the top panel) by assuming a simple power law spectrum with index &beta;opt,x = &beta;x and &beta;opt,x = &beta;x-0.5
+         </figcaption>
+      </figure>
+
     </script>
 	
 	<!-- Bootstrap Bundle with Popper -->
