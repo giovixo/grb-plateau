@@ -6,10 +6,10 @@ function plotData() {
 	var selectElement = document.querySelector('#select1');
 	var output = selectElement.value;
 	
-	document.getElementById('target').innerHTML = "Loading ...";
+	document.getElementById('target').innerHTML = "<br> Loading ...";
 	setTimeout (function () {		
 	// rendering
 	var rendered = Mustache.render(template, { name: output});
 	document.getElementById('target').innerHTML = rendered;
-	}, 500);
+	}, 1000);
 }
